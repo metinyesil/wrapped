@@ -1,0 +1,116 @@
+   body {
+      margin: 0;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #211f37;
+    }
+
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    
+    p#changingText {
+    color: white;
+    font-family: 'Open Sans';
+    font-size: 30px;
+    }
+
+    .form-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 999;
+      background: #211f37;
+      padding: 55px 30px;
+      border: 1px solid #3b3854;
+      border-radius: 20px;
+    }
+
+    .form-container input {
+      padding: 10px;
+      font-size: 16px;
+      margin-right: 8px;
+      border-radius: 8px;
+      border: 1px solid #cacaca;
+      width: 192px;
+    }
+
+    .form-container button {
+    padding: 10px 22px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #5ad2ff;
+    color: white;
+    border: 1px solid #92cbff;
+    border-radius: 8px;
+    }
+
+    .content {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 999;
+      color: white;
+      background: #211f37;
+      padding: 55px 30px;
+      border: 1px solid #3b3854;
+      animation-name: fadeInUpBig;
+    }
+
+
+    .content img {
+      max-width: 300px;
+      border-radius: 5px;
+    }
+    .content .profile {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #3a3854;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    margin: -43px;
+    border-radius: 20px;
+    }
+    .content .profile img{
+    border-radius: 50%;
+    width: 62px;
+    }
+
+    .content p {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: white;
+      margin-top: 20px;
+    }
+    .slidtext{
+      font-size: 30px;
+    }
+    @media only screen and (max-width:960px)
+    {
+      .slidtext{
+        font-size:20px;
+      }
+    }
